@@ -14,4 +14,5 @@ class BaseUrls(APIView):
 urlpatterns = [
     path('', BaseUrls.as_view()),
     path('exchange/',  include("exchange.urls")),
+    path('auth/', include('rest_auth.urls')),
 ]
