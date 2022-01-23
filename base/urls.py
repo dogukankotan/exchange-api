@@ -14,6 +14,4 @@ class BaseUrls(APIView):
 urlpatterns = [
     path('', BaseUrls.as_view()),
     path('exchange/',  include("exchange.urls")),
-    path('shares/',  include("shares.urls")),
-    path('clients/',  include("clients.urls")),
 ]
